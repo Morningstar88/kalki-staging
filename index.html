@@ -221,7 +221,7 @@ const postsContainer = document.querySelector(".posts-container");
 const searchDisplay = document.querySelector(".search-display");
 //https://gist.githubusercontent.com/Morningstar88/9d574ccdddac3fdb78ec0aa08b62adde/raw/54a568fa4d353fee39b768041339f52c90c91e44/gistfile1.txt?timestamp=12
 fetch(
-  "https://raw.githubusercontent.com/Morningstar88/kalki-search/master/myla.txt"
+  "https://raw.githubusercontent.com/Morningstar88/kalki-search/master/myla.staging"
 ).then(async (response) => {
   postsData = await response.json();
   postsData.map((post) => createPost(post));
